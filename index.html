@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HND GPA Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1><i class="fas fa-graduation-cap"></i> HND GPA Calculator</h1>
+
+<p>Engineering Semester 1</p>
+
+<hr>
+
+<label>Student Name</label>
+
+<input type="text" id="name" placeholder="Enter your name">
+
+<label>Registration Number</label>
+
+<input type="text" id="reg" placeholder="EG: ENG2026/001">
+
+<h2>Enter Your Grades</h2>
+
+<table>
+
+<tr>
+<th>Subject</th>
+<th>Credits</th>
+<th>Grade</th>
+</tr>
+
+<tr>
+<td>Engineering Mathematics</td>
+<td>3</td>
+<td>
+<select id="maths"></select>
+</td>
+</tr>
+
+<tr>
+<td>Fluid Mechanics</td>
+<td>2</td>
+<td>
+<select id="fluid"></select>
+</td>
+</tr>
+
+<tr>
+<td>English for Technology</td>
+<td>2</td>
+<td>
+<select id="english"></select>
+</td>
+</tr>
+
+<tr>
+<td>Program Concepts</td>
+<td>3</td>
+<td>
+<select id="program"></select>
+</td>
+</tr>
+
+<tr>
+<td>Electrical & Electronics</td>
+<td>3</td>
+<td>
+<select id="electrical"></select>
+</td>
+</tr>
+
+<tr>
+<td>Workshop Engineering</td>
+<td>2</td>
+<td>
+<select id="workshop"></select>
+</td>
+</tr>
+
+<tr>
+<td>Engineering Drawing</td>
+<td>3</td>
+<td>
+<select id="drawing"></select>
+</td>
+</tr>
+
+</table>
+
+<button onclick="calculate()">
+Calculate GPA
+</button>
+
+<button onclick="saveRecord()">
+Save Result
+</button>
+
+<div id="result">
+
+<h2>Your GPA will appear here</h2>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
